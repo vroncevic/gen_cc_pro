@@ -58,7 +58,8 @@ TOOL_NOTIFY="false"
 #			0   - tool finished with success operation
 #			128 - missing argument(s) from cli
 #			129 - failed to load tool script configuration from files
-#			130 - project already exist
+#			130 - failed to load configuration with project set
+#			131 - project already exist
 #
 # @usage
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -240,7 +241,8 @@ function __gen_cc_pro() {
 # 			127 - run tool script as root user from cli
 #			128 - missing argument(s) from cli
 #			129 - failed to load tool script configuration from files
-#			130 - project already exist
+#			130 - failed to load configuration with project set
+#			131 - project already exist
 #
 printf "\n%s\n%s\n\n" "${GEN_CC_PRO_TOOL} ${GEN_CC_PRO_VERSION}" "`date`"
 __check_root
