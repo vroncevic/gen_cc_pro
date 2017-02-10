@@ -167,6 +167,12 @@ function __gen_cc_pro() {
 		do
 			eval echo "${SCL}" >> ${SCF}
 		done < ${SCTF}
+		local CET=${project_set[CC_EDIT]}
+		local CETF=$(cat "${GEN_CC_PRO_HOME}/conf/${CET}")
+		local CEF="${SRC}/.editorconfig"
+		MSG="Generating file [${CEF}]"
+		__info_debug_message "$MSG" "$FUNC" "$GEN_CC_PRO_TOOL"
+		echo -e "${CETF}" > "${CEF}"
 		local MSF="${SRC}/Makefile.am" MST=${project_set[MAKEFILE_AMS]}
 		local MSTF="${GEN_CC_PRO_HOME}/conf/${MST}" MSL
 		MSG="Generating file [${MSF}]"
@@ -206,7 +212,7 @@ function __gen_cc_pro() {
 			eval echo "${NL}" >> ${NF}
 		done < ${NTF}
 		local RT=${project_set[README]} RF="${PDIR}/README" RL
-		local RMSG="${HASH} Readme section" RTF="${GEN_CC_PRO_HOME}/conf/${RT}"
+		local RMSG="${H} Readme section" RTF="${GEN_CC_PRO_HOME}/conf/${RT}"
 		MSG="Generating file [${RF}]"
 		__info_debug_message "$MSG" "$FUNC" "$GEN_CC_PRO_TOOL"
 		while read RL
@@ -220,6 +226,9 @@ function __gen_cc_pro() {
 		__info_debug_message "$MSG" "$FUNC" "$GEN_CC_PRO_TOOL"
 		__info_debug_message "$MSG" "$FUNC" "$GEN_CC_PRO_TOOL"
 		eval "chmod -R 755 ${PDIR}/"
+		MSG="Generated C++ project ${PDIR}/"
+		GEN_CC_PRO_LOGGING[LOG_MSGE]=$MSG
+		__logging GEN_CC_PRO_LOGGING
 		__info_debug_message_end "Done" "$FUNC" "$GEN_CC_PRO_TOOL"
 		TREE=$(which tree)
 		__check_tool "${TREE}"
