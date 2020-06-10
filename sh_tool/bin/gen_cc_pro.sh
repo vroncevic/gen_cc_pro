@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generate CC project
-# @version ver.1.0
+# @version ver.1.0.0
 # @date    Sun Jan 15 12:59:31 CET 2017
 # @company None, free software to use 2017
 # @author  Vladimir Roncevic <vladimir.roncevic@frobas.com>
