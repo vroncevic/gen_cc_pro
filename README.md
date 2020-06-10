@@ -1,8 +1,8 @@
 # Generate C++ Project.
 
-gen_cc_pro is shell tool for generating C++ project.
+***gen_cc_pro*** is shell tool for generating C++ project.
 
-Developed in bash code: 100%.
+Developed in bash code: ***100%***.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
@@ -10,6 +10,17 @@ other information that should be provided before the modules are installed.
 
 [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/gen_cc_pro.svg)](https://github.com/vroncevic/gen_cc_pro/issues)
  [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/gen_cc_pro.svg)](https://github.com/vroncevic/gen_cc_pro/graphs/contributors)
+
+<!-- START doctoc -->
+**Table of Contents**
+
+- [Installation](https://github.com/vroncevic/gen_cc_pro#installation)
+- [Usage](https://github.com/vroncevic/gen_cc_pro#usage)
+- [Dependencies](https://github.com/vroncevic/gen_cc_pro#dependencies)
+- [Shell tool structure](https://github.com/vroncevic/gen_cc_pro#shell-tool-structure)
+- [Docs](https://github.com/vroncevic/gen_cc_pro#docs)
+- [Copyright and Licence](https://github.com/vroncevic/gen_cc_pro#copyright-and-licence)
+<!-- END doctoc -->
 
 ### INSTALLATION
 
@@ -25,9 +36,9 @@ cp -R ~/sh_tool/conf/  /root/scripts/gen_cc_pro/ver.1.0/
 cp -R ~/sh_tool/log/   /root/scripts/gen_cc_pro/ver.1.0/
 ```
 
-Or You can use docker to create image/container.
+![alt tag](https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/setup_tree.png)
 
-:sparkles:
+Or You can use docker to create image/container.
 
 ### USAGE
 
@@ -50,18 +61,18 @@ This module requires these other modules and libraries:
 
 ### SHELL TOOL STRUCTURE
 
-gen_cc_pro is based on MOP.
+***gen_cc_pro*** is based on MOP.
 
 Shell tool structure:
 ```
 .
-├── bin
+├── bin/
 │   └── gen_cc_pro.sh
-├── conf
+├── conf/
 │   ├── gen_cc_pro.cfg
 │   ├── gen_cc_pro_util.cfg
 │   ├── project_set.cfg
-│   └── template
+│   └── template/
 │       ├── authors.template
 │       ├── autogen.template
 │       ├── cc_editorconfig.template
@@ -73,7 +84,7 @@ Shell tool structure:
 │       ├── makefile_am_src.template
 │       ├── news.template
 │       └── readme.template
-└── log
+└── log/
     └── gen_cc_pro.log
 ```
 
@@ -85,8 +96,6 @@ More documentation and info at:
 
 * https://gen_cc_pro.readthedocs.io/en/latest/
 
-:sparkles:
-
 ### COPYRIGHT AND LICENCE
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -97,4 +106,3 @@ This tool is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
-:sparkles:
