@@ -47,6 +47,8 @@ To install **gen_cc_pro** type the following:
    cp -R ~/sh_tool/conf/  /root/scripts/gen_cc_pro/ver.1.0/
    cp -R ~/sh_tool/log/   /root/scripts/gen_cc_pro/ver.1.0/
 
+Or You can use Docker to create image/container.
+
 |GitHub docker checker|
 
 .. |GitHub shell checker| image:: https://github.com/vroncevic/gen_cc_pro/workflows/gen_cc_pro%20docker%20checker/badge.svg
