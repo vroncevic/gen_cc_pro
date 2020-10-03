@@ -34,15 +34,15 @@ RUN cp -R /sh_util-1.0.0/sh_tool/bin/   /root/scripts/sh_util/ver.1.0/
 RUN cp -R /sh_util-1.0.0/sh_tool/conf/  /root/scripts/sh_util/ver.1.0/
 RUN cp -R /sh_util-1.0.0/sh_tool/log/   /root/scripts/sh_util/ver.1.0/
 RUN rm -Rf v1.0.0.zip sh_util-1.0.0
-RUN mkdir /gen_cc_pro/
-COPY gen_cc_pro /gen_cc_pro/
-RUN find /gen_cc_pro/ -name "*.editorconfig" -type f -exec rm -Rf {} \;
+RUN mkdir /sh_tool/
+COPY sh_tool /sh_tool/
+RUN find /sh_tool/ -name "*.editorconfig" -type f -exec rm -Rf {} \;
 RUN mkdir -p /root/scripts/gen_cc_pro/ver.1.0/
 RUN mkdir /root/bin/
-RUN cp -R /gen_cc_pro/bin/   /root/scripts/gen_cc_pro/ver.1.0/
-RUN cp -R /gen_cc_pro/conf/  /root/scripts/gen_cc_pro/ver.1.0/
-RUN cp -R /gen_cc_pro/log/   /root/scripts/gen_cc_pro/ver.1.0/
-RUN rm -Rf /gen_cc_pro/
+RUN cp -R /sh_tool/bin/   /root/scripts/gen_cc_pro/ver.1.0/
+RUN cp -R /sh_tool/conf/  /root/scripts/gen_cc_pro/ver.1.0/
+RUN cp -R /sh_tool/log/   /root/scripts/gen_cc_pro/ver.1.0/
+RUN rm -Rf /sh_tool/
 RUN chmod -R 755 /root/scripts/gen_cc_pro/ver.1.0/
 RUN ln -s /root/scripts/gen_cc_pro/ver.1.0/bin/gen_cc_pro.sh /root/bin/gen_cc_pro
 RUN tree /root/scripts/gen_cc_pro/ver.1.0/
