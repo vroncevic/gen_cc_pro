@@ -110,3 +110,8 @@ Copyright (C) 2017 by [vroncevic.github.io/gen_cc_pro](https://vroncevic.github.
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
+Lets help and support FSF.
+
+[![Free Software Foundation](https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/fsf-logo_1.png)](https://my.fsf.org/)
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://my.fsf.org/donate/)
