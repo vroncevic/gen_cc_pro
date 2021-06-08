@@ -1,3 +1,5 @@
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/gen_cc_pro_logo.png" width="25%">
+
 # Generate C++ Project
 
 **gen_cc_pro** is shell tool for generating C++ project.
@@ -32,11 +34,11 @@ Navigate to release **[page](https://github.com/vroncevic/gen_cc_pro/releases)**
 To install **gen_cc_pro** type the following:
 
 ```
-tar xvzf gen_cc_pro-x.y.z.tar.gz
-cd gen_cc_pro-x.y.z
-cp -R ~/sh_tool/bin/   /root/scripts/gen_cc_pro/ver.1.0/
-cp -R ~/sh_tool/conf/  /root/scripts/gen_cc_pro/ver.1.0/
-cp -R ~/sh_tool/log/   /root/scripts/gen_cc_pro/ver.1.0/
+tar xvzf gen_cc_pro-x.y.tar.gz
+cd gen_cc_pro-x.y
+cp -R ~/sh_tool/bin/   /root/scripts/gen_cc_pro/ver.x.y/
+cp -R ~/sh_tool/conf/  /root/scripts/gen_cc_pro/ver.x.y/
+cp -R ~/sh_tool/log/   /root/scripts/gen_cc_pro/ver.x.y/
 ```
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/setup_tree.png)
@@ -49,7 +51,7 @@ Or You can use docker to create image/container.
 
 ```
 # Create symlink for shell tool
-ln -s /root/scripts/gen_cc_pro/ver.1.0/bin/gen_cc_pro.sh /root/bin/gen_cc_pro
+ln -s /root/scripts/gen_cc_pro/ver.x.y/bin/gen_cc_pro.sh /root/bin/gen_cc_pro
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
@@ -69,7 +71,7 @@ gen_cc_pro SimpleTest
 
 Code structure:
 ```
-.
+sh_tool/
 ├── bin/
 │   └── gen_cc_pro.sh
 ├── conf/

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generate CC project
-# @version ver.1.0.0
+# @version ver.1.0
 # @date    Sun Jan 15 12:59:31 CET 2017
 # @company None, free software to use 2017
 # @author  Vladimir Roncevic <vladimir.roncevic@frobas.com>
@@ -56,6 +56,7 @@ TOOL_NOTIFY="false"
 # @param   Value required project name
 # @retval  Function __gen_cc_pro exit with integer value
 #            0   - tool finished with success operation
+#            127 - run tool script as root user from cli
 #            128 - missing argument(s) from cli
 #            129 - failed to load tool script configuration from files
 #            130 - failed to load configuration with project set
@@ -220,8 +221,8 @@ function __gen_cc_pro {
         do
             eval echo "${RL}" >> ${RF}
         done < ${RTF}
-        local USRID=${config_gen_cc_pro_util[UID]}
-        local GRPID=${config_gen_cc_pro_util[GID]}
+        local USRID=${config_gen_cc_pro_util[USERID]}
+        local GRPID=${config_gen_cc_pro_util[GROUPID]}
         eval "chown -R ${USRID}.${GRPID} ${PDIR}/"
         MSG="Set permission!"
         info_debug_message "$MSG" "$FUNC" "$GEN_CC_PRO_TOOL"
@@ -246,13 +247,7 @@ function __gen_cc_pro {
 #
 # @brief   Main entry point of script tool
 # @param   Value required project name
-# @exitval Script tool gen_cc_pro exit with integer value
-#            0   - tool finished with success operation
-#             127 - run tool script as root user from cli
-#            128 - missing argument(s) from cli
-#            129 - failed to load tool script configuration from files
-#            130 - failed to load configuration with project set
-#            131 - project already exist
+# @exitval Script tool gen_cc_pro exit with integer value 0 - 131
 #
 printf "\n%s\n%s\n\n" "${GEN_CC_PRO_TOOL} ${GEN_CC_PRO_VERSION}" "`date`"
 check_root
