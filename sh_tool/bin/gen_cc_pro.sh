@@ -56,7 +56,6 @@ TOOL_NOTIFY="false"
 # @param   Value required project name
 # @retval  Function __gen_cc_pro exit with integer value
 #            0   - tool finished with success operation
-#            127 - run tool script as root user from cli
 #            128 - missing argument(s) from cli
 #            129 - failed to load tool script configuration from files
 #            130 - failed to load configuration with project set
@@ -247,7 +246,13 @@ function __gen_cc_pro {
 #
 # @brief   Main entry point of script tool
 # @param   Value required project name
-# @exitval Script tool gen_cc_pro exit with integer value 0 - 131
+# @exitval Script tool gen_cc_pro exit with integer value
+#            0   - tool finished with success operation
+#            127 - run tool script as root user from cli
+#            128 - missing argument(s) from cli
+#            129 - failed to load tool script configuration from files
+#            130 - failed to load configuration with project set
+#            131 - project already exist
 #
 printf "\n%s\n%s\n\n" "${GEN_CC_PRO_TOOL} ${GEN_CC_PRO_VERSION}" "`date`"
 check_root
