@@ -6,7 +6,7 @@
 
 Developed in **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** code: **100%**.
 
-[![gen_cc_pro shell checker](https://github.com/vroncevic/gen_cc_pro/workflows/gen_cc_pro%20shell%20checker/badge.svg)](https://github.com/vroncevic/gen_cc_pro/actions?query=workflow%3A%22gen_cc_pro+shell+checker%22)
+[![gen_cc_pro_shell_checker](https://github.com/vroncevic/gen_cc_pro/actions/workflows/gen_cc_pro_shell_checker.yml/badge.svg)](https://github.com/vroncevic/gen_cc_pro/actions/workflows/gen_cc_pro_shell_checker.yml)
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
@@ -107,12 +107,15 @@ Sun 05 Dec 2021 01:51:23 PM CET
 [check_root] Done
 
     	                                               
-    	  __ _  ___ _ __     ___ ___   _ __  _ __ ___  
-    	 / _` |/ _ \ '_ \   / __/ __| | '_ \| '__/ _ \ 
-    	| (_| |  __/ | | | | (_| (__  | |_) | | | (_) |
-    	 \__, |\___|_| |_|  \___\___| | .__/|_|  \___/ 
-    	 |___/                        |_|              
-    	                                               
+                                                                                 
+                                                        ██████                   
+    █████   █████  ███████         █████   █████       ░██░░░██ ██████  ██████   
+   ██░░░██ ██░░░██░░██░░░██       ██░░░██ ██░░░██      ░██  ░██░░██░░█ ██░░░░██  
+  ░██  ░██░███████ ░██  ░██      ░██  ░░ ░██  ░░       ░██████  ░██ ░ ░██   ░██  
+  ░░██████░██░░░░  ░██  ░██      ░██   ██░██   ██      ░██░░░   ░██   ░██   ░██  
+   ░░░░░██░░██████ ███  ░██ █████░░█████ ░░█████  █████░██     ░███   ░░██████   
+    █████  ░░░░░░ ░░░   ░░ ░░░░░  ░░░░░   ░░░░░  ░░░░░ ░░      ░░░     ░░░░░░    
+   ░░░░░                                                                          
     		Info   github.io/gen_cc_pro ver.2.0 
     		Issue  github.io/issue
     		Author vroncevic.github.io
@@ -225,17 +228,17 @@ sh_tool/
 
 ### Docs
 
-[![Documentation Status](https://readthedocs.org/projects/gen_cc_pro/badge/?version=latest)](https://gen_cc_pro.readthedocs.io/projects/gen_cc_pro/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/gen_cc_pro/badge/?version=latest)](https://gen-cc-pro.readthedocs.io/projects/gen_cc_pro/en/latest/?badge=latest)
 
 More documentation and info at
-* [https://gen_cc_pro.readthedocs.io/en/latest/](https://gen_cc_pro.readthedocs.io/en/latest/)
+* [https://gen_cc_pro.readthedocs.io/en/latest/](https://gen-cc-pro.readthedocs.io/en/latest/)
 * [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
 
 ### Copyright and licence
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Copyright (C) 2017 by [vroncevic.github.io/gen_cc_pro](https://vroncevic.github.io/gen_cc_pro)
+Copyright (C) 2017 - 2024 by [vroncevic.github.io/gen_cc_pro](https://vroncevic.github.io/gen_cc_pro)
 
 **gen_cc_pro** is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
