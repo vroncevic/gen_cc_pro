@@ -1,6 +1,6 @@
 <img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/gen_cc_pro_logo.png" width="25%">
 
-# Generate C++ Project
+# Generate CC Project
 
 **gen_cc_pro** is shell tool for generating C++ project.
 
@@ -85,8 +85,6 @@ lrwxrwxrwx 1 root root 50 Dec  5 13:49 /root/bin/gen_cc_pro -> /root/scripts/gen
 ```
 
 Or You can use docker to create image/container.
-
-[![gen_cc_pro docker checker](https://github.com/vroncevic/gen_cc_pro/workflows/gen_cc_pro%20docker%20checker/badge.svg)](https://github.com/vroncevic/gen_cc_pro/actions?query=workflow%3A%22gen_cc_pro+docker+checker%22)
 
 ### Usage
 

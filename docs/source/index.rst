@@ -1,7 +1,7 @@
 gen_cc_pro
 -----------
 
-**gen_cc_pro** is shell tool for generating C++ project.
+**gen_cc_pro** is shell tool for generating CC project.
 
 Developed in `bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ code: **100%**.
 
