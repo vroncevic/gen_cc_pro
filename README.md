@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/gen_cc_pro_logo.png" width="25%">
-
 # Generate CC Project
+
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_cc_pro/dev/docs/gen_cc_pro_logo.png" width="25%">
 
 **gen_cc_pro** is shell tool for generating C++ project.
 
@@ -35,7 +35,7 @@ Navigate to release **[page](https://github.com/vroncevic/gen_cc_pro/releases)**
 
 To install **gen_cc_pro** type the following
 
-```
+```bash
 tar xvzf gen_cc_pro-x.y.tar.gz
 cd gen_cc_pro-x.y
 cp -R ~/sh_tool/bin/   /root/scripts/gen_cc_pro/ver.x.y/
@@ -44,7 +44,8 @@ cp -R ~/sh_tool/log/   /root/scripts/gen_cc_pro/ver.x.y/
 ```
 
 Self generated setup script and execution
-```
+
+```bash
 ./gen_cc_pro_setup.sh 
 
 [setup] installing App/Tool/Script gen_cc_pro
@@ -88,7 +89,7 @@ Or You can use docker to create image/container.
 
 ### Usage
 
-```
+```bash
 # Create symlink for shell tool
 ln -s /root/scripts/gen_cc_pro/ver.x.y/bin/gen_cc_pro.sh /root/bin/gen_cc_pro
 
@@ -197,7 +198,8 @@ Sun 05 Dec 2021 01:51:23 PM CET
 **gen_cc_pro** is based on MOP.
 
 Shell tool structure
-```
+
+```bash
 sh_tool/
 ├── bin/
 │   ├── center.sh
