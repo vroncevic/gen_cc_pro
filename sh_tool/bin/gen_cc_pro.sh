@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generate CC project
-# @version ver.3.0
+# @version ver.4.0
 # @date    Sun 05 Dec 2021 01:46:04 PM CET
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -11,8 +11,6 @@ UTIL_VERSION=ver.1.0
 UTIL=${UTIL_ROOT}/sh_util/${UTIL_VERSION}
 UTIL_LOG=${UTIL}/log
 
-.    ${UTIL}/bin/devel.sh
-.    ${UTIL}/bin/usage.sh
 .    ${UTIL}/bin/check_root.sh
 .    ${UTIL}/bin/check_tool.sh
 .    ${UTIL}/bin/logging.sh
@@ -22,7 +20,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/display_logo.sh
 
 GEN_CC_PRO_TOOL=gen_cc_pro
-GEN_CC_PRO_VERSION=ver.3.0
+GEN_CC_PRO_VERSION=ver.4.0
 GEN_CC_PRO_HOME=${UTIL_ROOT}/${GEN_CC_PRO_TOOL}/${GEN_CC_PRO_VERSION}
 GEN_CC_PRO_CFG=${GEN_CC_PRO_HOME}/conf/${GEN_CC_PRO_TOOL}.cfg
 GEN_CC_PRO_UTIL_CFG=${GEN_CC_PRO_HOME}/conf/${GEN_CC_PRO_TOOL}_util.cfg
@@ -49,6 +47,13 @@ declare -A PB_STRUCTURE=(
     [SLEEP]=0.01
 )
 
+declare -A GEN_CC_PRO_LOGO_DATA=(
+    [OWNER]="vroncevic"
+    [REPO]="${GEN_CC_PRO_TOOL}"
+    [VERSION]="${GEN_CC_PRO_VERSION}"
+    [LOGO]="${GEN_CC_PRO_LOGO}"
+)
+
 TOOL_DBG="false"
 TOOL_LOG="false"
 TOOL_NOTIFY="false"
@@ -71,7 +76,7 @@ TOOL_NOTIFY="false"
 function __gen_cc_pro {
     local PN=$1
     if [ -n "${PN}" ]; then
-        display_logo "vroncevic" "${GEN_CC_PRO_TOOL}" "${GEN_CC_PRO_VERSION}" "${GEN_CC_PRO_LOGO}"
+        display_logo GEN_CC_PRO_LOGO_DATA
         local FUNC=${FUNCNAME[0]} MSG="None"
         local STATUS_CONF STATUS_CONF_UTIL STATUS
         MSG="Loading basic and util configuration!"
